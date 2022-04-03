@@ -23,6 +23,9 @@ export const NavItems = () => {
                 <NavLink to="/" className="nav-item">Home</NavLink>
             </StyledNavItem>
             <StyledNavItem>
+                <NavLink to="/blog" className="nav-item">Blog</NavLink>
+            </StyledNavItem>
+            <StyledNavItem>
                 <NavLink to="/contact" className="nav-item">Contact</NavLink>
             </StyledNavItem>
         </StyledUL>

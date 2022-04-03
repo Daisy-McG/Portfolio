@@ -1,0 +1,13 @@
+:root {
+    /* Colors */
+    --b-font: #0F0F0F;
+    --purple: #1A1423;
+    --dim-grey: #666B6A;
+    --bone: #CCC7B9;
+    --white: #fff;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: var(--bone);
+}

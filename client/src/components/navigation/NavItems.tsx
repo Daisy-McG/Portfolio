@@ -13,6 +13,7 @@ const StyledUL = styled.ul`
 
 const StyledNavItem = styled.li`
     list-style: none;
+    margin-left: 1rem;
 `
 
 export const NavItems = () => {
@@ -20,6 +21,9 @@ export const NavItems = () => {
         <StyledUL>
             <StyledNavItem>
                 <NavLink to="/" className="nav-item">Home</NavLink>
+            </StyledNavItem>
+            <StyledNavItem>
+                <NavLink to="/contact" className="nav-item">Contact</NavLink>
             </StyledNavItem>
         </StyledUL>
     )

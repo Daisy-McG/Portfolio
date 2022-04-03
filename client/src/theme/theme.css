@@ -7,6 +7,16 @@
     --white: #fff;
 }
 
+html,
+body,
+#root {
+    height: 100%;
+}
+
+main {
+    min-height: 100%;
+}
+
 .nav-item {
     text-decoration: none;
     color: var(--bone);

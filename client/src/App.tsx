@@ -1,24 +1,24 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css'
-import { Navbar } from './components/navigation'
-import HomePage from './pages/home'
 import styled from 'styled-components/macro'
 
-const MainContainer = styled.main`
-  
-`
+import { Navbar } from './components/navigation'
+
+import HomePage from './pages/Home'
+import Contact from './pages/Contact'
 
 function App() {
 
   return (
     <Router>
       <Navbar />
-      <MainContainer>
+      <main id='main'>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </MainContainer>
+      </main>
     </Router>
   )
 }

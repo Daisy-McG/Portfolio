@@ -1,25 +1,28 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css'
-import { Navbar } from './components/navigation'
-import HomePage from './pages/home'
-import styled from 'styled-components/macro'
 
-const MainContainer = styled.main`
-  
-`
+import { Navbar } from './components/navigation'
+import { Footer } from './components/footer'
+
+import HomePage from './pages/Home'
+import Blog from './pages/Blog'
+import Contact from './pages/Contact'
 
 function App() {
 
   return (
-    <MainContainer>
-      <Router>
-        <Navbar />
+    <Router>
+      <Navbar />
+      <main id='main'>
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
-      </Router>
-    </MainContainer>
+      </main>
+      <Footer />
+    </Router>
   )
 }
 

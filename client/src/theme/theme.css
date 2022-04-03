@@ -5,9 +5,36 @@
     --dim-grey: #666B6A;
     --bone: #CCC7B9;
     --white: #fff;
+
+    /* Font Sizes */
+    --f-xl: 1.5rem;
+    --f-l: 1.25rem;
+    --f-md: 1rem;
+    --f-s: 0.75rem;
+    --f-xs: 0.5rem;
 }
 
-.nav-item {
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    min-height: calc(100vh - 225px);
+}
+
+.anchor {
     text-decoration: none;
     color: var(--bone);
+}
+
+/* Footer */
+.footer-txt {
+    font-size: var(--f-s);
 }

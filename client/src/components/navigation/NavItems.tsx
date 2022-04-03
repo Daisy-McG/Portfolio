@@ -20,13 +20,13 @@ export const NavItems = () => {
     return (
         <StyledUL>
             <StyledNavItem>
-                <NavLink to="/" className="nav-item">Home</NavLink>
+                <NavLink to="/" className="anchor">Home</NavLink>
             </StyledNavItem>
             <StyledNavItem>
-                <NavLink to="/blog" className="nav-item">Blog</NavLink>
+                <NavLink to="/blog" className="anchor">Blog</NavLink>
             </StyledNavItem>
             <StyledNavItem>
-                <NavLink to="/contact" className="nav-item">Contact</NavLink>
+                <NavLink to="/contact" className="anchor">Contact</NavLink>
             </StyledNavItem>
         </StyledUL>
     )

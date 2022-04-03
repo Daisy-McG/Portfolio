@@ -12,14 +12,14 @@ const MainContainer = styled.main`
 function App() {
 
   return (
-    <MainContainer>
-      <Router>
-        <Navbar />
+    <Router>
+      <Navbar />
+      <MainContainer>
         <Routes>
           <Route path="/" element={<HomePage />} />
         </Routes>
-      </Router>
-    </MainContainer>
+      </MainContainer>
+    </Router>
   )
 }
 

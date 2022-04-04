@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "Lora";
+    src: url("../assets/fonts/Lora-VariableFont_wght.ttf") format("ttf");
+    font-weight: bold;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Martel";
+    src: url("../assets/fonts/Martel-Regular.ttf") format("ttf");
+    font-weight: bold;
+    font-display: swap;
+}
+
 :root {
     /* Colors */
     --b-font: #0F0F0F;
@@ -12,6 +26,11 @@
     --f-md: 1rem;
     --f-s: 0.75rem;
     --f-xs: 0.5rem;
+
+    /* Fonts */
+    --lora: 'Lora';
+
+    --martel: 'Martel';
 }
 
 html,
@@ -23,6 +42,16 @@ body,
 body {
     display: flex;
     flex-direction: column;
+    font-family: var(--martel);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--lora);
 }
 
 #main {

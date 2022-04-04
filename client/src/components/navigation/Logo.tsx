@@ -1,4 +1,4 @@
-import MainLogo from '../../assets/dm_logo.png'
+import MainLogo from '../../assets/images/dm_logo.png'
 import styled from 'styled-components/macro'
 
 const StyledLogo = styled.img`

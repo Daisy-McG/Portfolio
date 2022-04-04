@@ -17,9 +17,6 @@ const StyledUL = styled.ul`
 const StyledNavItem = styled.li`
     list-style: none;
     padding: 0 0.5rem;
-    @media (min-width: 50rem) {
-    margin-left: 1rem;
-  }
 `
 
 export const NavItems = () => {

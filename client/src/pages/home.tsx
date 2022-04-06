@@ -3,7 +3,7 @@ import { Navbar } from "../components/navigation";
 
 const HomePage = () => {
     return (
-        <div> Home Page</div >
+        <h1> Home Page</h1 >
     )
 }
 

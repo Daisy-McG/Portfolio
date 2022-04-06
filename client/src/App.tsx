@@ -5,7 +5,7 @@ import './App.css'
 import { Navbar } from './components/navigation'
 import { Footer } from './components/footer'
 
-import HomePage from './pages/Home'
+import HomePage from './pages/HomePage'
 import Blog from './pages/Blog'
 import Contact from './pages/Contact'
 

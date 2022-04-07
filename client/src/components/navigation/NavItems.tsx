@@ -6,14 +6,17 @@ import '../../theme/theme.css'
 const StyledUL = styled.ul`
     display: flex;  
     justify-content: flex-end;
-    width: 100%;
     align-items: center;
-    margin-right: 1rem;
+    padding: 0;
+    @media (min-width: 50rem) {
+    flex-direction: row;
+    color: var(--bone);
+  }
 `
 
 const StyledNavItem = styled.li`
     list-style: none;
-    margin-left: 1rem;
+    padding: 0 0.5rem;
 `
 
 export const NavItems = () => {

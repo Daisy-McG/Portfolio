@@ -5,9 +5,14 @@ import '../../theme/theme.css'
 
 const StyledNav = styled.div`
     display: flex;
-    flex-direction: row;
-    background-color: var(--purple);
+    flex-direction: column;
+    background-color: var(--blue);
     align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 3px 4px #4e4747;
+    @media (min-width: 50rem) {
+    flex-direction: row;
+  }
 `
 
 const LogoDiv = styled.div`

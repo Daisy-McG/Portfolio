@@ -35,15 +35,14 @@ const Image = styled.img`
 `
 
 const Follow = styled.span`
-    color: var(--dim-grey);
+    color: var(--purple);
     font-weight: bolder;
     border: 2px solid var(--white);
     padding: 0.25rem;
     border-radius: 5px;
     box-shadow: 2px 2px #888888;
     &:hover {
-        color: #c22222;
-        padding: 0.3rem;
+        color: var(--dim-grey);
     }
     &:active {
         border: none;

@@ -13,9 +13,10 @@ const Container = styled.div`
 `
 
 const MainDiv = styled.div`
-    width: 100%;
+    width: 89%;
     @media (min-width: 50rem) {
         width: 70%;
+        padding: 0 2rem;
     }
 `
 
@@ -29,12 +30,12 @@ const Aside = styled.aside`
 const HomePage = () => {
     return (
         <Container>
-            <MainDiv>
-                <h1> Home Page</h1 >
-            </MainDiv>
             <Aside>
                 <Github />
             </Aside>
+            <MainDiv>
+                <h1> Home Page</h1 >
+            </MainDiv>
         </Container>
     )
 }

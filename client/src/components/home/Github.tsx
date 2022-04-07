@@ -10,6 +10,11 @@ const Container = styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: var(--white);
+    margin-top: 1.5rem;
+    border: 1px solid #1a14235c;
+    border-radius: 2px;
+    box-shadow: 6px 6px 4px #4e4747;
 `
 
 const Heading = styled.p`
@@ -37,7 +42,7 @@ const Follow = styled.span`
     box-shadow: 2px 2px #888888;
     &:hover {
         color: #c22222;
-        padding: 0.35rem;
+        padding: 0.3rem;
     }
     &:active {
         border: none;
@@ -61,9 +66,9 @@ const Git = () => {
         ).then((res) => res.data)
     );
 
-    if (isLoading) return <Container>"Loading..."</Container>;
+    if (isLoading) return <Container><Heading>"Loading..."</Heading></Container>;
 
-    if (error) return <Container>An error has occurred: ${error.message}</Container>;
+    if (error) return <Container><Heading>An error has occurred: ${error.message}</Heading></Container>;
 
     return (
         <Container>
@@ -82,7 +87,7 @@ const Git = () => {
             <ExternalLink href={data.html_url} className='anchor'>
                 <Follow>Follow</Follow>
             </ExternalLink>
-            <div>{isFetching ? "Updating..." : ""}</div>
+            <Heading>{isFetching ? "Updating..." : ""}</Heading>
         </Container>
     );
 }

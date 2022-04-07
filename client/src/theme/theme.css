@@ -55,7 +55,9 @@ h6 {
 }
 
 #main {
-    min-height: calc(100vh - 225px);
+    min-height: calc(100vh - 224px);
+    padding: 0 2rem;
+    background-color: var(--bone);
 }
 
 .anchor {

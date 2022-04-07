@@ -13,6 +13,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     justify-content: center;
     min-height: 100px;
+    box-shadow: 0px 10px 5px #4e4747, 2px -1px 6px #4e4747;
     @media (min-width: 50rem) {
     flex-direction: row;
     color: var(--white);

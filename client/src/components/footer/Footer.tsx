@@ -9,20 +9,20 @@ import '../../theme/theme.css'
 const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
-    background-color: var(--purple);
+    background-color: var(--blue);
     align-items: center;
     justify-content: center;
     min-height: 100px;
     @media (min-width: 50rem) {
     flex-direction: row;
-    color: var(--bone);
+    color: var(--white);
   }
 `
 
 const StyledDiv = styled.div`
     width: 100%;
     text-align: center;
-    color: var(--bone);
+    color: var(--white);
     @media (min-width: 50rem) {
         width: 50%;
     }
@@ -31,7 +31,7 @@ const StyledDiv = styled.div`
 const StyledHeader = styled.h3`
     font-size: var(--f-md);
     font-weight: 500;
-    color: var(--bone);
+    color: var(--white);
 `
 
 const StyledSpan = styled.span`

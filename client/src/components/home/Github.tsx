@@ -15,6 +15,7 @@ const Container = styled.div`
     border: 1px solid #1a14235c;
     border-radius: 2px;
     box-shadow: 6px 6px 4px #4e4747;
+    padding-bottom: 1rem;
 `
 
 const Heading = styled.p`
@@ -36,7 +37,7 @@ const Image = styled.img`
 const Follow = styled.span`
     color: var(--dim-grey);
     font-weight: bolder;
-    border: 2px solid var(--bone);
+    border: 2px solid var(--white);
     padding: 0.25rem;
     border-radius: 5px;
     box-shadow: 2px 2px #888888;
@@ -60,7 +61,7 @@ export function Github() {
 }
 
 const Git = () => {
-    const { isLoading, error, data, isFetching } = useQuery("repoData", () =>
+    const { isLoading, error, data, isFetching } = useQuery<string, Error, any>("repoData", () =>
         axios.get(
             "https://api.github.com/users/Daisy-McG"
         ).then((res) => res.data)

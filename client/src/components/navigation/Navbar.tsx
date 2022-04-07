@@ -6,7 +6,7 @@ import '../../theme/theme.css'
 const StyledNav = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: var(--purple);
+    background-color: var(--blue);
     align-items: center;
     justify-content: space-between;
     @media (min-width: 50rem) {

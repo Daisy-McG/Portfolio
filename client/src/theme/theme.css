@@ -15,9 +15,8 @@
 :root {
     /* Colors */
     --b-font: #0F0F0F;
-    --purple: #1A1423;
+    --blue: #16334c;
     --dim-grey: #666B6A;
-    --bone: #CCC7B9;
     --white: #fff;
 
     /* Font Sizes */
@@ -57,12 +56,12 @@ h6 {
 #main {
     min-height: calc(100vh - 224px);
     padding: 0 2rem;
-    background-color: var(--bone);
+    background-color: #dfdfdf87;
 }
 
 .anchor {
     text-decoration: none;
-    color: var(--bone);
+    color: var(--white);
 }
 
 /* Footer */

@@ -17,7 +17,6 @@ const StyledUL = styled.ul`
 const StyledNavItem = styled.li`
     list-style: none;
     padding: 0 0.5rem;
-
 `
 
 export const NavItems = () => {

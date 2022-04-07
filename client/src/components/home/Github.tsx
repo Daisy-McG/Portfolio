@@ -60,12 +60,13 @@ export function Github() {
 }
 
 const Git = () => {
-    const { isLoading, error, data, isFetching } = useQuery("repoData", () =>
+    const { isLoading, error, data, isFetching } = useQuery<string, Error, any>("repoData", () =>
         axios.get(
             "https://api.github.com/users/Daisy-McG"
         ).then((res) => res.data)
     );
 
+    console.log(typeof data)
     if (isLoading) return <Container><Heading>"Loading..."</Heading></Container>;
 
     if (error) return <Container><Heading>An error has occurred: ${error.message}</Heading></Container>;

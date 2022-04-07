@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components/macro'
 
+import { Github } from '../components/home'
+
 const Container = styled.div`
     display: flex;
     flex-direction: column;
@@ -31,7 +33,7 @@ const HomePage = () => {
                 <h1> Home Page</h1 >
             </MainDiv>
             <Aside>
-                <p>Something will go here</p>
+                <Github />
             </Aside>
         </Container>
     )

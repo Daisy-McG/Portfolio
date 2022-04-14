@@ -3,10 +3,10 @@ import { Logo } from './Logo'
 import styled from 'styled-components/macro'
 import '../../theme/theme.css'
 
-const StyledNav = styled.div`
+const Nav = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: var(--purple);
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 3px 4px #4e4747;
@@ -21,11 +21,11 @@ const LogoDiv = styled.div`
 
 export const Navbar = () => {
     return (
-        <StyledNav>
+        <Nav>
             <LogoDiv>
                 <Logo />
             </LogoDiv>
             <NavItems />
-        </StyledNav>
+        </Nav>
     )
 }

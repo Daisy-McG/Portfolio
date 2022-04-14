@@ -9,7 +9,7 @@ import '../../theme/theme.css'
 const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
-    background-color: var(--blue);
+    background-color: var(--purple);
     align-items: center;
     justify-content: center;
     min-height: 100px;

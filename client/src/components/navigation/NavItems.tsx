@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import '../../theme/theme.css'
 
 
-const StyledUL = styled.ul`
+const UL = styled.ul`
     display: flex;  
     justify-content: flex-end;
     align-items: center;
@@ -14,23 +14,23 @@ const StyledUL = styled.ul`
   }
 `
 
-const StyledNavItem = styled.li`
+const NavItem = styled.li`
     list-style: none;
     padding: 0 0.5rem;
 `
 
 export const NavItems = () => {
     return (
-        <StyledUL>
-            <StyledNavItem>
+        <UL>
+            <NavItem>
                 <NavLink to="/" className="anchor">Home</NavLink>
-            </StyledNavItem>
-            <StyledNavItem>
+            </NavItem>
+            <NavItem>
                 <NavLink to="/blog" className="anchor">Blog</NavLink>
-            </StyledNavItem>
-            <StyledNavItem>
+            </NavItem>
+            <NavItem>
                 <NavLink to="/contact" className="anchor">Contact</NavLink>
-            </StyledNavItem>
-        </StyledUL>
+            </NavItem>
+        </UL>
     )
 }

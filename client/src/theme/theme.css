@@ -15,7 +15,7 @@
 :root {
     /* Colors */
     --b-font: #0F0F0F;
-    --blue: #16334c;
+    --purple: #3e0d3d;
     --dim-grey: #666B6A;
     --white: #fff;
 
@@ -55,7 +55,7 @@ h6 {
 
 #main {
     min-height: calc(100vh - 224px);
-    padding: 0 2rem;
+    padding: 0 1rem;
     background-color: #dfdfdf87;
 }
 
@@ -67,4 +67,11 @@ h6 {
 /* Footer */
 .footer-txt {
     font-size: var(--f-s);
+}
+
+/* Media Queries */
+@media only screen and (min-width: 50rem) {
+    #main {
+        padding: 0 2rem;
+    }
 }
